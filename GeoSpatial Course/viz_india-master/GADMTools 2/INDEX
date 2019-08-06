@@ -1,0 +1,38 @@
+Corsica                 Map of Corse (FRA) @ level 4 (Cantons)
+GADM36SF                data.frame of maps provided by gadm_org)
+GADMTools-package       Easy use of GADM shapefiles
+choropleth              Draw a choropleth on selected regions
+classDots               Plot dots on a map with values between
+                        different fixed classes.
+dots                    Plot dots on a map
+fast.choropleth         Draw a choropleth on selected regions with
+                        lattice.
+gadm_crop               crop a region to a specific rectangle
+gadm_getBackground      Gets tiles with 'rosm' from OpenStreetMap
+gadm_getBbox            get the bounding box of the map
+gadm_loadStripped       Load one GADM stripped shapefile
+gadm_longTo360          Converts longitudes from -180° - 0° - 180° to
+                        0° - 360°
+gadm_plot               Draw a gadm_sf or gadm_sp object
+gadm_remove             Remove one or more regions from a map
+gadm_removeBackground   Removes the background of a map
+gadm_saveStripped       Save a stripped GADM object
+gadm_sf_loadCountries   Load one or more GADM shapefiles
+gadm_showNorth          display a north arrow on a plot
+gadm_showScale          display a scale on a plot
+gadm_sp_loadCountries   Load one or more GADM shapefiles
+                        (SpatialPolygonsDataFrame)
+gadm_subset             Extract regions
+gadm_union              Merges regions
+grid.map                Arrange maps on a grid
+isopleth                Draw an isopleth on selected regions
+json.choropleth         Create a geojson choropleth of selected
+                        regions.
+listNames               List the region names for a specific
+                        administrative level
+propDots                Plot proportionnal circles (dots) on a map
+saveAs                  Save your own GADM shapefile as an rds file
+saveAsStripped          Strip a gadm_sp object
+stripSP                 Strip a gadm_sp object
+strippedExists          Test if a stripped gadm_sp object exists
+vignette                Create a vignette

@@ -1,0 +1,45 @@
+---
+title: "GeoSpatial Data Use Cases"
+author: "Daniel Lombard"
+date: "6/15/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+```
+
+The purpose of this R markdown file is to experiment with a variety of GeoSpatial use cases. For this analysis, I will be taking a look at the geospatial data associated with India's population. 
+Let's started by importing the data. 
+
+```{r message=FALSE, warning=FALSE}
+```
+```{r}
+library(sf)
+my_sf = st_read("india_states_2014/india_states.shp")
+```
+
+```{r}
+library(GADMTools)
+india_wrapper = gadm_sf.loadCountries("IND", level = 1, basefile = "./")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r echo= true}
+my_spdf = as(my_sf, "Spatial")
+class(my_spdf)
+```
+
+
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+str(my_spdf, max.level = 2)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
